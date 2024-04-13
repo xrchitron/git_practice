@@ -14,3 +14,10 @@ interface ITheFunction {
   (a: number, b: number): number;
 }
 const theFunctionVar: ITheFunction = (a, b) => a + b;
+
+const theClassVar = class TheClass {
+  constructor(public name: string, public age: number) {}
+  public getDetails() {
+    return `${this.name} is ${this.age} years old.`;
+  }
+};
