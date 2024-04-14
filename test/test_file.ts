@@ -13,7 +13,6 @@ const theObjectVar: ITheObject = { name: "John", age: 30 };
 interface ITheFunction {
   (a: number, b: number): number;
 }
-const theFunctionVar: ITheFunction = (a, b) => a + b;
 
 const theClassVar = class TheClass {
   constructor(public name: string, public age: number) {}
@@ -21,3 +20,5 @@ const theClassVar = class TheClass {
     return `${this.name} is ${this.age} years old.`;
   }
 };
+
+const theFunctionVar: ITheFunction = (a, b) => a + b;
